@@ -1,0 +1,64 @@
+Bootstrap=>
+ is a popular front-end framework that helps developers build responsive and mobile-first websites quickly.
+  It provides pre-designed CSS styles, JavaScript components, and grid systems, making web development easier and more efficient.
+
+Grid System=>
+Uses a 12-column layout to create flexible and responsive designs.
+Supports different screen sizes (mobile, tablet, desktop).
+
+Pre-styled Components=>
+Includes buttons, modals, navbars, forms, alerts, and more.
+Saves time compared to writing CSS from scratch.
+
+JavaScript Components=>
+Includes dropdowns, carousels, tooltips, popovers, and modals.
+Uses jQuery and vanilla JavaScript for interactive elements.
+
+Customization=>
+Can override default styles using CSS or SASS.
+
+A module ->
+ in programming is a reusable piece of code that can be imported and used in different parts of an application without rewriting it. 
+ Modules help keep code organized, reusable, and easier to maintain.
+ 
+  Modules in Bootstrap->
+ import { Modal, Tooltip } from 'bootstrap';
+const myModal = new Modal(document.getElementById('myModal'));
+const tooltip = new Tooltip(document.querySelector('#tooltipElement'));
+
+Why Use Modules?
+Encapsulation: Keeps code separate and organized.
+Reusability: Write once, use anywhere.
+Maintainability: Easier to debug and manage.
+Performance: Imports only necessary code (tree shaking in modern bundlers).
+
+*A tooltip in Bootstrap is a small, hover-activated popup that provides additional information about an element. 
+It appears when the user hovers over or focuses on an element, and it is often used to give hints or descriptions
+
+*Tooltip Triggers=>
+By default, tooltips are triggered on hover and focus. You can customize this using data-bs-trigger:
+hover , focus , click , manual
+
+*data-bs-placement attribute:
+top , bottom , left , right
+
+*A modal in Bootstrap is a dialog box or popup window that is displayed on top of the main content. 
+It is used for user interactions such as displaying messages, forms, images, or confirmations without leaving the current page.
+
+.modal → The main container.
+.modal-dialog → The modal dialog box.
+.modal-content → The modal content wrapper.
+.modal-header → The modal header section (title & close button).
+.modal-body → The main content of the modal.
+.modal-footer → The footer section (usually contains buttons).
+
+data-bs-toggle =>is used to toggle (show/hide) Bootstrap components like modals, dropdowns, and accordions.
+data-bs-target => is used to specify the target element that will be affected by the toggle.
+aria-expanded =>  is expanded (true) or collapsed (false).
+aria-controls => Links the button to the element it controls for screen readers.
+aria-labelledby => links an element to another element that labels it
+tabindex => Helps users navigate with keyboards.
+tabindex="0" → The element can be focused using Tab (follows normal order).
+tabindex="-1" → The element cannot be focused by Tab, but can be focused with JavaScript (element.focus()).
+tabindex="1+" (e.g., tabindex="2") → Custom focus order (not recommended).
+aria-hidden =>  hides an element from screen readers (but not visually).
