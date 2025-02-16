@@ -1,0 +1,80 @@
+1. What is Bootstrap, and why is it used?
+Bootstrap is a popular open-source CSS framework used to develop responsive and mobile-first websites quickly.
+ It provides pre-designed components, utility classes, and a flexible grid system that helps developers build UI elements efficiently.
+
+2. What are the key features of Bootstrap?
+Responsive Grid System – Uses a flexible grid layout.
+Pre-styled Components – Includes buttons, modals, forms, and more.
+Utility Classes – Quick styling without writing custom CSS.
+Customizable – Can override styles via SASS/SCSS.
+Mobile-first Design – Optimized for all devices.
+Browser Compatibility – Works on all modern browsers.
+
+3. How do you include Bootstrap in a project?
+Using CDN (Recommended for faster loading):
+Downloading and including files manually.
+Using npm or yarn:
+
+4. What is the Bootstrap grid system?
+is based on 12 columns and allows responsive layout design.
+ It uses classes like .container, .row, and .col- to define column.
+
+ 5. What is the difference between container and container-fluid?
+.container: Provides a fixed-width container that adapts based on screen size.
+.container-fluid: Stretches across the full width of the screen.
+
+6. What are Bootstrap breakpoints?
+Breakpoints are predefined screen sizes where layout changes occur.
+xs (extra small) - <576px
+sm (small) - ≥576px
+md (medium) - ≥768px
+lg (large) - ≥992px
+xl (extra large) - ≥1200px
+xxl (extra extra large) - ≥1400px
+
+7. What is the difference between d-none, invisible, and display: none?
+d-none: Completely hides an element (removes from layout).
+invisible: Makes the element invisible but keeps its space.
+display: none: Same as d-none, but applied via CSS directly.
+
+8. How do Bootstrap flex utilities work?
+Bootstrap provides flexbox utilities to align and distribute items.
+justify-content-between pushes the items apart.
+
+9. What is the difference between .btn-primary and .btn-outline-primary?
+.btn-primary: A solid-colored button.
+.btn-outline-primary: A button with only a border and transparent background.
+
+10. How does Bootstrap handle form validation?
+Bootstrap provides built-in validation styles using .is-valid and .is-invalid classes.
+
+11. How do you use Bootstrap modals, and how can they be triggered?
+Bootstrap modals are pop-up dialogs that can be triggered using a button.
+
+12. How does Bootstrap handle accessibility (ARIA attributes)?:
+Bootstrap uses ARIA (Accessible Rich Internet Applications) attributes to improve accessibility. Examples:
+Buttons: aria-pressed="true"
+Modals: aria-labelledby="modal-title"
+Navbars/collabse: aria-expanded="false"
+
+13. Can you use Bootstrap with React or Vue?
+Yes, Bootstrap can be used in React and Vue. The preferred method is using react-bootstrap or bootstrap-vue.
+
+14. How can you override Bootstrap styles?
+There are three ways to override Bootstrap styles:
+1-Using CSS file:
+2-Using SCSS (if using Bootstrap source)
+3-Using inline styles (Not recommended)
+
+15. How does Bootstrap handle dark mode?
+Bootstrap 5 introduced dark mode using data-bs-theme="dark" for elements.
+
+16. What is SASS/SCSS?
+SASS (Syntactically Awesome Stylesheets) is a CSS preprocessor that adds variables, nesting, mixins, and functions.
+SCSS (Sassy CSS) is the most common syntax of SASS, using CSS-like syntax.
+
+17. Why Use SASS to Customize Bootstrap?
+✅ Modify Bootstrap variables (like colors, fonts, spacing) without writing extra CSS.
+✅ Reduce CSS file size by importing only the components you need.
+✅ Easier maintenance by using variables and functions.
+

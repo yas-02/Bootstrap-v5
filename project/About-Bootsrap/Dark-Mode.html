@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Theme Toggle</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body data-bs-theme="light"> <!-- Default theme is light -->
+
+    <div class="container mt-5 text-center">
+        <h2 class="mb-4">Bootstrap Theme Toggle (Light/Dark Mode)</h2>
+
+        <!-- Theme Toggle Button -->
+        <button id="themeToggleBtn" class="btn btn-dark">Switch to Dark Mode</button>
+
+        <!-- Card Example -->
+        <div class="card text-bg-light mt-4" id="themeCard">
+            <div class="card-body">
+                <h5 class="card-title">Bootstrap Theme Example</h5>
+                <p class="card-text">Click the button to switch between light and dark modes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript for Theme Toggle -->
+    <script>
+        const themeToggleBtn = document.getElementById("themeToggleBtn");
+        const body = document.body;
+        const themeCard = document.getElementById("themeCard");
+
+        themeToggleBtn.addEventListener("click", function () {
+            if (body.getAttribute("data-bs-theme") === "light") {
+                body.setAttribute("data-bs-theme", "dark");
+                themeToggleBtn.textContent = "Switch to Light Mode";
+                themeToggleBtn.classList.replace("btn-dark", "btn-light");
+                themeCard.classList.replace("text-bg-light", "text-bg-dark");
+            } else {
+                body.setAttribute("data-bs-theme", "light");
+                themeToggleBtn.textContent = "Switch to Dark Mode";
+                themeToggleBtn.classList.replace("btn-light", "btn-dark");
+                themeCard.classList.replace("text-bg-dark", "text-bg-light");
+            }
+        });
+    </script>
+
+</body>
+</html>
+
